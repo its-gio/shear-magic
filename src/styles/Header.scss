@@ -5,8 +5,8 @@
 .logo-container {
   margin: 0 auto;
   max-width: 350px;
-}
 
-.logo-container--img {
-  width: 100%;
+  &--img {
+    width: 100%;
+  }
 }
