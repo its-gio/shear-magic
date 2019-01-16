@@ -1,5 +1,10 @@
-import React from "react";
-import { render } from "react-dom";
-import Layout from "./components/Layout.jsx";
+import React, { Component } from "react";
+import "./index.css";
 
-render(React.createElement(Layout), document.getElementById("root"));
+class App extends Component {
+  render() {
+    return <div className="App">Learn React</div>;
+  }
+}
+
+export default App;
