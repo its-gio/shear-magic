@@ -1,0 +1,26 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  max-width: 90vw;
+  margin: 0 auto;
+
+  &--content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    &__img-container {
+      width: 40vw;
+      max-width: 380px;
+    }
+
+    &__img {
+      width: 100%;
+    }
+
+    &__text {
+      width: 45vw;
+      margin: 0;
+    }
+  }
+}

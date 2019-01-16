@@ -1,12 +1,19 @@
 import React, { Component } from "react";
+import img from "../imgs/the-man.jpg";
 
 class About extends Component {
   render() {
     return (
       <div className="about">
-        <h3 className="about--title">About the shearer</h3>
+        <h2 className="about--title">About The Shearer</h2>
         <div className="about--content">
-          <img className="about--content__img" src="#" alt="The Magic Man" />
+          <div className="about--content__img-container">
+            <img
+              className="about--content__img"
+              src={img}
+              alt="The Magic Man"
+            />
+          </div>
           <p className="about--content__text">
             Sergio Balcorta has worked with alpacas since 2007 at Derwydd
             Alpacas. He worked his way from cleaning alpaca manure to ranch and
