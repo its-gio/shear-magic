@@ -1,0 +1,12 @@
+.header {
+  padding: 15px 0;
+}
+
+.logo-container {
+  margin: 0 auto;
+  max-width: 350px;
+}
+
+.logo-container--img {
+  width: 100%;
+}
