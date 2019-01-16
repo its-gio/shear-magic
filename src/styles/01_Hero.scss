@@ -1,16 +1,17 @@
 .hero {
-  background: url("../src/imgs/hero.jpg") no-repeat top;
-  background-size: cover;
+  background: #ff3819 url("../src/imgs/hero.jpg") no-repeat center;
   color: #fff;
   text-align: center;
   height: 75vh;
   position: relative;
 
   &--content {
-    max-width: 60vw;
+    width: 100%;
+    max-width: 380px;
+    padding: 0 10px;
     margin: 0 auto;
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
