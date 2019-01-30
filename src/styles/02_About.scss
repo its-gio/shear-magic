@@ -3,15 +3,16 @@
   flex-direction: column;
   max-width: 90vw;
   margin: 0 auto;
+  padding-bottom: 20px;
 
   &--content {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
 
     &__img-container {
-      width: 40vw;
+      width: 45vw;
       max-width: 380px;
+      padding-right: 5px;
     }
 
     &__img {
@@ -19,8 +20,9 @@
     }
 
     &__text {
-      width: 45vw;
+      flex: 1;
       margin: 0;
+      padding-left: 5px;
     }
   }
 }
