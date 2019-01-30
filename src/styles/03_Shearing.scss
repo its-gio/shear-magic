@@ -1,5 +1,28 @@
 .shearing-div {
   background: url("../src/imgs/shearing-div.jpg") no-repeat center;
   background-size: cover;
-  height: 1000px;
+  background-attachment: fixed;
+  height: 250px;
+}
+
+.shearing {
+  max-width: 90vw;
+  margin: 0 auto;
+  padding-bottom: 20px;
+
+  &--top {
+    display: flex;
+
+    &__blockquote {
+      display: inline-block;
+      background: #f9f9f9;
+      border-left: 10px solid #ccc;
+      margin: 1.5em 0px;
+      padding: 0.5em 10px;
+
+      p {
+        margin: 0;
+      }
+    }
+  }
 }
