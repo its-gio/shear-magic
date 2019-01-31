@@ -18,6 +18,21 @@
       display: flex;
     }
 
+    &__img-container {
+      flex: 1;
+      text-align: center;
+    }
+
+    &__img {
+      width: 100%;
+      height: auto;
+      max-width: 650px;
+    }
+
+    &__list {
+      flex: 1;
+    }
+
     &__blockquote {
       display: inline-block;
       background: #f9f9f9;
@@ -38,14 +53,22 @@
 
     &__content {
       margin-right: 5px;
+      flex: 1;
     }
 
     &__img-container {
       margin-left: 5px;
+      flex: 1;
+      text-align: center;
     }
   }
 
   &--bottom {
     display: flex;
+
+    &__left,
+    &__right {
+      flex: 1;
+    }
   }
 }
