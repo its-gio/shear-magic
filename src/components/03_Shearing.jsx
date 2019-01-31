@@ -81,6 +81,44 @@ class Shearing extends Component {
           </div>
         </div>
         <hr />
+        <div className="shearing--bottom">
+          <div className="shearing--bottom__left">
+            <h3>Llama Shearing:</h3>
+            <p>Llamas are sheared standing up.</p>
+            <p>Requirements are:</p>
+            <ol>
+              <li>Electricity within 100ft</li>
+              <li>Must be dry</li>
+              <li>Haltered and in a catch pen or stall</li>
+              <li>
+                A corner of a barn where lead rope can be tied above the llamas
+                head
+              </li>
+              <li>No feed or water 12 hours prior</li>
+            </ol>
+            <p>
+              If your llama is not trained or does not handle well. Please have
+              some means to sedate ready for use. If llamas are not well behaved
+              only the barrel (torso) of the llama will be sheared. It is at the
+              shearers discretion to continue if the animals behavior becomes
+              dangerous.
+            </p>
+          </div>
+          <div className="shearing--bottom__right">
+            <h3>Sheep Shearing:</h3>
+            <p>Requirements for shearing sheep.</p>
+            <ol>
+              <li>
+                Have sheep in a small catch area. (rule of thumb: can you catch
+                them in this space?)
+              </li>
+              <li>Must be dry</li>
+              <li>Electricity within 100ft</li>
+              <li>Remove all feed and water 24 hrs prior to shearing</li>
+              <li>Means for fleece collection</li>
+            </ol>
+          </div>
+        </div>
       </div>
     );
   }
