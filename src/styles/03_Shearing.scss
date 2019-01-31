@@ -12,6 +12,11 @@
 
   &--top {
     display: flex;
+    flex-direction: column;
+
+    &__content-container {
+      display: flex;
+    }
 
     &__blockquote {
       display: inline-block;
@@ -23,6 +28,20 @@
       p {
         margin: 0;
       }
+    }
+  }
+
+  &--middle {
+    &__content-container {
+      display: flex;
+    }
+
+    &__content {
+      margin-right: 5px;
+    }
+
+    &__img-container {
+      margin-left: 5px;
     }
   }
 }
