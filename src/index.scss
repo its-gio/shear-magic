@@ -11,3 +11,20 @@ body,
 html {
   margin: 0;
 }
+
+.divider {
+  height: 250px;
+
+  &.shearing-div {
+    background: url("../src/imgs/shearing-div.jpg") no-repeat fixed center;
+  }
+
+  &.pricing-div {
+    background: url("../src/imgs/pricing-div.jpg") no-repeat fixed center;
+  }
+
+  &.shearing-div,
+  &.pricing-div {
+    background-size: cover;
+  }
+}

@@ -12,8 +12,9 @@ class App extends Component {
         <Header />
         <Hero />
         <About />
-        <div className="shearing-div" />
+        <div className="divider shearing-div" />
         <Shearing />
+        <div className="divider pricing-div" />
       </React.Fragment>
     );
   }
