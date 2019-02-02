@@ -4,7 +4,7 @@ import img from "../imgs/the-man.jpg";
 class About extends Component {
   render() {
     return (
-      <div className="about">
+      <div className="about component-container">
         <h2 className="about--title">About The Shearer:</h2>
         <div className="about--content">
           <div className="about--content__img-container">
