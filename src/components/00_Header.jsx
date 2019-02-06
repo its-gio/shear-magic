@@ -13,8 +13,12 @@ class Header extends Component {
             alt="Shear Magic Logo"
           />
         </div>
-        <nav>
-          <Button onClick={this.props.scroll}>About</Button>
+        <nav className="navbar">
+          <Button onClick={() => this.props.scroll("About")}>About</Button>
+          <Button onClick={() => this.props.scroll("Shearing")}>
+            Shearing
+          </Button>
+          <Button onClick={() => this.props.scroll("Pricing")}>Pricing</Button>
         </nav>
       </div>
     );

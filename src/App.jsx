@@ -10,8 +10,17 @@ import Pricing from "./components/04_Pricing.jsx";
 class App extends Component {
   state = {};
 
-  handleScroll = () => {
-    scrollToComponent(this.About, { offset: 0, align: "top", duration: 1500 });
+  handleScroll = input => {
+    const { About, Shearing, Pricing } = this;
+    const options = { offset: 0, align: "top", duration: 1000 };
+
+    if (input === "About") {
+      scrollToComponent(About, options);
+    } else if (input === "Shearing") {
+      scrollToComponent(Shearing, options);
+    } else if (input === "Pricing") {
+      scrollToComponent(Pricing, options);
+    }
   };
 
   render() {
@@ -25,9 +34,17 @@ class App extends Component {
           }}
         />
         <div className="divider shearing-div" />
-        <Shearing />
+        <Shearing
+          ref={section => {
+            this.Shearing = section;
+          }}
+        />
         <div className="divider pricing-div" />
-        <Pricing />
+        <Pricing
+          ref={section => {
+            this.Pricing = section;
+          }}
+        />
       </React.Fragment>
     );
   }
