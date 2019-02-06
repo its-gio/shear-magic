@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Divider from "@material-ui/core/Divider";
 import checklist from "../imgs/shear-day-checklist.jpg";
 import parts from "../imgs/shearing-parts.png";
 
@@ -11,13 +12,6 @@ class Shearing extends Component {
             Shearing Day Checklist (Alpaca):
           </h2>
           <div className="shearing--top__content-container">
-            <div className="shearing--top__img-container">
-              <img
-                src={checklist}
-                alt="Shear Day Checklist"
-                className="shearing--top__img"
-              />
-            </div>
             <ul className="shearing--top__list">
               <li>Electricity within 100ft</li>
               <li>A level shaded area 15ft X 15 ft</li>
@@ -37,6 +31,13 @@ class Shearing extends Component {
                 halters don&apos;t work well)
               </li>
             </ul>
+            <div className="shearing--top__img-container">
+              <img
+                src={checklist}
+                alt="Shear Day Checklist"
+                className="shearing--top__img"
+              />
+            </div>
           </div>
           <blockquote className="shearing--top__blockquote">
             <p>Note:</p>
@@ -47,7 +48,7 @@ class Shearing extends Component {
             </p>
           </blockquote>
         </div>
-        <hr />
+        <Divider variant="middle" />
         <div className="shearing--middle">
           <h3 className="shearing--middle__title">Shearing Alpacas:</h3>
           <div className="shearing--middle__content-container">
@@ -80,7 +81,7 @@ class Shearing extends Component {
             </div>
           </div>
         </div>
-        <hr />
+        <Divider variant="middle" />
         <div className="shearing--bottom">
           <div className="shearing--bottom__left">
             <h3>Llama Shearing:</h3>

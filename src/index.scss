@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Bitter|Dancing+Script:700|Lato");
 @import "./styles/00_Header.scss";
 @import "./styles/01_Hero.scss";
 @import "./styles/02_About.scss";
@@ -13,8 +14,40 @@ html {
   margin: 0;
 }
 
+h2,
+h3 {
+  font-family: "Bitter", serif;
+  color: #444;
+}
+
+p,
+ul,
+ol {
+  font-family: "Lato", sans-serif;
+  font-size: 1.2em;
+  color: #999;
+}
+
+ul,
+ol {
+  line-height: 1.5;
+}
+
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 1.7em;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
 .component-container {
-  max-width: 90vw;
+  max-width: 980px;
   margin: 0 auto;
   padding-bottom: 20px;
 }
