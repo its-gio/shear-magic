@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Button from "@material-ui/core/Button";
 
 class Hero extends Component {
   render() {
@@ -9,9 +10,13 @@ class Hero extends Component {
             Alpaca, Llama, &amp; Sheep Shearing Services
           </h1>
           <p className="hero--content__claimer">Shearing since 2013</p>
-          <button className="hero--content__contact">
+          <Button
+            variant="contained"
+            color="primary"
+            className="hero--content__contact"
+          >
             Make An Appointment
-          </button>
+          </Button>
         </div>
       </div>
     );
