@@ -11,7 +11,7 @@ class Shearing extends Component {
           <h2 className="shearing--top__title">
             Shearing Day Checklist (Alpaca):
           </h2>
-          <div className="shearing--top__content-container">
+          <div className="shearing--top__content-container break">
             <ul className="shearing--top__list">
               <li>Electricity within 100ft</li>
               <li>A level shaded area 15ft X 15 ft</li>
@@ -51,7 +51,7 @@ class Shearing extends Component {
         <Divider variant="middle" />
         <div className="shearing--middle">
           <h3 className="shearing--middle__title">Shearing Alpacas:</h3>
-          <div className="shearing--middle__content-container">
+          <div className="shearing--middle__content-container break">
             <div className="shearing--middle__content">
               <p>
                 There is no international standard on how to remove a fleece
@@ -82,7 +82,7 @@ class Shearing extends Component {
           </div>
         </div>
         <Divider variant="middle" />
-        <div className="shearing--bottom">
+        <div className="shearing--bottom break">
           <div className="shearing--bottom__left">
             <h3>Llama Shearing:</h3>
             <p>Llamas are sheared standing up.</p>
@@ -107,7 +107,7 @@ class Shearing extends Component {
           </div>
           <div className="shearing--bottom__right">
             <h3>Sheep Shearing:</h3>
-            <p>Requirements for shearing sheep.</p>
+            <p>Requirements for shearing sheep:</p>
             <ol>
               <li>
                 Have sheep in a small catch area. (rule of thumb: can you catch

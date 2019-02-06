@@ -37,6 +37,12 @@
     &__img-container {
       flex: 1;
       text-align: center;
+      margin: 0 10px;
+    }
+
+    &__img {
+      width: 100%;
+      height: auto;
     }
   }
 
@@ -46,6 +52,22 @@
     &__left,
     &__right {
       flex: 1;
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .shearing {
+    &--top {
+      &__img-container {
+        margin: 10px 0;
+      }
+    }
+
+    &--middle {
+      &__img-container {
+        margin: 10px 0;
+      }
     }
   }
 }

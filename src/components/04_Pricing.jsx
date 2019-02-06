@@ -5,7 +5,7 @@ class Pricing extends Component {
     return (
       <div className="pricing component-container">
         <h2 className="pricing--title">Pricing Schedule:</h2>
-        <div className="pricing--content-container">
+        <div className="pricing--content-container break">
           <ul className="pricing--content-container__list">
             <li>$25 per alpaca</li>
             <li>$45 per llama</li>
@@ -14,12 +14,20 @@ class Pricing extends Component {
             <li>$10 nail trimming per llama</li>
             <li>$50 Ranch Call</li>
           </ul>
-          <p className="pricing--content-container__request">Please ensure you are prepared on the day of your appointment. Those details can be found  in the shearing tab above. If you are not prepared when Sergio arrives, at his discretion he may cancel or reschedule the appointment.</p>
+          <p className="pricing--content-container__request">
+            Please ensure you are prepared on the day of your appointment. Those
+            details can be found in the shearing tab above. If you are not
+            prepared when Sergio arrives, at his discretion he may cancel or
+            reschedule the appointment.
+          </p>
         </div>
         <blockquote className="pricing--blockquote">
-            <p>Note:</p>
-            <p>If contact and establishing an appointment is made after May 1st ranch call will be $100</p>
-          </blockquote>
+          <p>Note:</p>
+          <p>
+            If contact and establishing an appointment is made after May 1st
+            ranch call will be $100
+          </p>
+        </blockquote>
       </div>
     );
   }

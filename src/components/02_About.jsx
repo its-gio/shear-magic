@@ -6,7 +6,7 @@ class About extends Component {
     return (
       <div className="about component-container">
         <h2 className="about--title">About The Shearer:</h2>
-        <div className="about--content">
+        <div className="about--content break">
           <div className="about--content__img-container">
             <img
               className="about--content__img"
