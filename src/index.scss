@@ -25,12 +25,14 @@ ul,
 ol {
   font-family: "Lato", sans-serif;
   font-size: 1.2em;
-  color: #999;
+  color: #888;
 }
 
 ul,
 ol {
   line-height: 1.5;
+  margin: 0;
+  padding-left: 25px;
 }
 
 h1 {
