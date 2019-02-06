@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Button from "@material-ui/core/Button";
 import logo from "../imgs/shear-magic-logo.png";
 
 class Header extends Component {
@@ -12,6 +13,9 @@ class Header extends Component {
             alt="Shear Magic Logo"
           />
         </div>
+        <nav>
+          <Button onClick={this.props.scroll}>About</Button>
+        </nav>
       </div>
     );
   }
