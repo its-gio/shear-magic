@@ -6,10 +6,9 @@ import Hero from "./components/01_Hero.jsx";
 import About from "./components/02_About.jsx";
 import Shearing from "./components/03_Shearing.jsx";
 import Pricing from "./components/04_Pricing.jsx";
+import ContactForm from "./components/05_ContactForm.jsx";
 
 class App extends Component {
-  state = {};
-
   handleScroll = input => {
     const { About, Shearing, Pricing } = this;
     const options = { offset: 0, align: "top", duration: 1000 };
@@ -45,6 +44,8 @@ class App extends Component {
             this.Pricing = section;
           }}
         />
+
+        <ContactForm />
       </React.Fragment>
     );
   }

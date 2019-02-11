@@ -4,6 +4,7 @@
 @import "./styles/02_About.scss";
 @import "./styles/03_Shearing.scss";
 @import "./styles/04_Pricing.scss";
+@import "./styles/05_ContactForm.scss";
 
 * {
   box-sizing: border-box;
@@ -49,6 +50,12 @@ h3 {
   font-size: 1.4em;
 }
 
+.component-container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
 blockquote {
   display: inline-block;
   background: #f9f9f9;
@@ -61,12 +68,6 @@ blockquote {
   p {
     margin: 0;
   }
-}
-
-.component-container {
-  max-width: 980px;
-  margin: 0 auto;
-  padding: 20px 10px;
 }
 
 .divider {
