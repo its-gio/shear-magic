@@ -10,16 +10,9 @@ import ContactForm from "./components/05_ContactForm.jsx";
 
 class App extends Component {
   handleScroll = input => {
-    const { About, Shearing, Pricing } = this;
     const options = { offset: 0, align: "top", duration: 1000 };
 
-    if (input === "About") {
-      scrollToComponent(About, options);
-    } else if (input === "Shearing") {
-      scrollToComponent(Shearing, options);
-    } else if (input === "Pricing") {
-      scrollToComponent(Pricing, options);
-    }
+    scrollToComponent(this[input], options);
   };
 
   render() {
@@ -27,23 +20,11 @@ class App extends Component {
       <React.Fragment>
         <Header scroll={this.handleScroll} />
         <Hero />
-        <About
-          ref={section => {
-            this.About = section;
-          }}
-        />
+        <About ref={section => (this.About = section)} />
         <div className="divider shearing-div" />
-        <Shearing
-          ref={section => {
-            this.Shearing = section;
-          }}
-        />
+        <Shearing ref={section => (this.Shearing = section)} />
         <div className="divider pricing-div" />
-        <Pricing
-          ref={section => {
-            this.Pricing = section;
-          }}
-        />
+        <Pricing ref={section => (this.Pricing = section)} />
 
         <ContactForm />
       </React.Fragment>
