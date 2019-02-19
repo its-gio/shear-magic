@@ -19,6 +19,7 @@ class Header extends Component {
             Shearing
           </Button>
           <Button onClick={() => this.props.scroll("Pricing")}>Pricing</Button>
+          <Button onClick={() => this.props.scroll("Contact")}>Contact</Button>
         </nav>
       </div>
     );

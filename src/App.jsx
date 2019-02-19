@@ -26,7 +26,7 @@ class App extends Component {
         <div className="divider pricing-div" />
         <Pricing ref={section => (this.Pricing = section)} />
 
-        <ContactForm />
+        <ContactForm ref={section => (this.Contact = section)} />
       </React.Fragment>
     );
   }
