@@ -1,17 +1,42 @@
 import React, { Component } from "react";
-import { TextField, Button } from "@material-ui/core";
+import MaskedInput from "react-text-mask";
+import { TextField, Button, Input } from "@material-ui/core";
+
+function TextMaskCustom(props) {
+  const { inputRef, ...other } = props;
+
+  return (
+    <MaskedInput
+      {...other}
+      ref={ref => {
+        inputRef(ref ? ref.inputElement : null);
+      }}
+      mask={[
+        "(",
+        /\d/,
+        /\d/,
+        /\d/,
+        ")",
+        " ",
+        /\d/,
+        /\d/,
+        /\d/,
+        "-",
+        /\d/,
+        /\d/,
+        /\d/,
+        /\d/
+      ]}
+      placeholderChar={"\u2000"}
+      showMask
+    />
+  );
+}
 
 class ContactInfo extends Component {
-  onChange(event) {
-    // formatted pretty value
-    console.log(event.target.value);
-
-    // raw value
-    console.log(event.target.rawValue);
-  }
-
   render() {
-    const { values, handleChange } = this.props;
+    const { handleChange } = this.props;
+    const { fullName, phoneNumber } = this.props.values;
 
     return (
       <div className="form-component form">
@@ -19,8 +44,15 @@ class ContactInfo extends Component {
           id="fullName"
           label="Full Name"
           placeholder="Enter Full Name"
-          value={values.fullName}
+          value={fullName}
           onChange={handleChange("fullName")}
+        />
+        <Input
+          id="phoneNumber"
+          placeholder="Enter Phone Number"
+          value={phoneNumber}
+          onChange={handleChange("phoneNumber")}
+          inputComponent={TextMaskCustom}
         />
         <Button>Continue</Button>
       </div>

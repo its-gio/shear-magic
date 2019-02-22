@@ -4,7 +4,8 @@ import ContactInfo from "./Form_Components/00_ContactInfo.jsx";
 class ContactForm extends Component {
   state = {
     step: 1,
-    fullName: ""
+    fullName: "",
+    phoneNumber: "(  )    -    "
   };
 
   nextStep = () => {
@@ -22,8 +23,8 @@ class ContactForm extends Component {
   };
 
   render() {
-    const { step, fullName } = this.state;
-    const values = { fullName };
+    const { step, fullName, phoneNumber } = this.state;
+    const values = { fullName, phoneNumber };
 
     switch (step) {
       case 1:
