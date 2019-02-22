@@ -5,7 +5,8 @@ class ContactForm extends Component {
   state = {
     step: 1,
     fullName: "",
-    phoneNumber: "(  )    -    "
+    phoneNumber: "(  )    -    ",
+    location: ""
   };
 
   nextStep = () => {
@@ -23,8 +24,8 @@ class ContactForm extends Component {
   };
 
   render() {
-    const { step, fullName, phoneNumber } = this.state;
-    const values = { fullName, phoneNumber };
+    const { step, fullName, phoneNumber, location } = this.state;
+    const values = { fullName, phoneNumber, location };
 
     switch (step) {
       case 1:

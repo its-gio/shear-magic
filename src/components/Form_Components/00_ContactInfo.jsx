@@ -42,7 +42,7 @@ function TextMaskCustom(props) {
 class ContactInfo extends Component {
   render() {
     const { handleChange } = this.props;
-    const { fullName, phoneNumber } = this.props.values;
+    const { fullName, phoneNumber, location } = this.props.values;
 
     return (
       <div className="form-component form">
@@ -62,6 +62,13 @@ class ContactInfo extends Component {
             inputComponent={TextMaskCustom}
           />
         </FormControl>
+        <TextField
+          id="location"
+          label="Location"
+          placeholder="Enter Location"
+          value={location}
+          onChange={handleChange("location")}
+        />
         <Button variant="contained" color="primary">
           Continue
         </Button>
