@@ -19,7 +19,7 @@ class App extends Component {
     return (
       <React.Fragment>
         <Header scroll={this.handleScroll} />
-        <Hero />
+        <Hero scroll={this.handleScroll} />
         <About ref={section => (this.About = section)} />
         <div className="divider shearing-div" />
         <Shearing ref={section => (this.Shearing = section)} />
