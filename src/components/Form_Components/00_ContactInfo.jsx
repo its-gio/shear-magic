@@ -1,6 +1,12 @@
 import React, { Component } from "react";
 import MaskedInput from "react-text-mask";
-import { TextField, Button, Input } from "@material-ui/core";
+import {
+  TextField,
+  Button,
+  Input,
+  InputLabel,
+  FormControl
+} from "@material-ui/core";
 
 function TextMaskCustom(props) {
   const { inputRef, ...other } = props;
@@ -47,13 +53,15 @@ class ContactInfo extends Component {
           value={fullName}
           onChange={handleChange("fullName")}
         />
-        <Input
-          id="phoneNumber"
-          placeholder="Enter Phone Number"
-          value={phoneNumber}
-          onChange={handleChange("phoneNumber")}
-          inputComponent={TextMaskCustom}
-        />
+        <FormControl>
+          <InputLabel htmlFor="phoneNumber">Phone Number</InputLabel>
+          <Input
+            id="phoneNumber"
+            value={phoneNumber}
+            onChange={handleChange("phoneNumber")}
+            inputComponent={TextMaskCustom}
+          />
+        </FormControl>
         <Button variant="contained" color="primary">
           Continue
         </Button>
