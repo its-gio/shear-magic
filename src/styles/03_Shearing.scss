@@ -32,6 +32,10 @@
     &__content {
       margin-right: 5px;
       flex: 1;
+
+      p:first-child {
+        margin-top: 0;
+      }
     }
 
     &__img-container {
