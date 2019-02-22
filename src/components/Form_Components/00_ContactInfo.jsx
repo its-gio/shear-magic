@@ -54,7 +54,9 @@ class ContactInfo extends Component {
           onChange={handleChange("phoneNumber")}
           inputComponent={TextMaskCustom}
         />
-        <Button>Continue</Button>
+        <Button variant="contained" color="primary">
+          Continue
+        </Button>
       </div>
     );
   }
