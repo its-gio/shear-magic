@@ -31,7 +31,7 @@ class ContactForm extends Component {
     switch (step) {
       case 1:
         return (
-          <div>
+          <div className="component-container">
             <h2>Contact Form</h2>
             <ContactInfo
               handleChange={this.handleChange}
@@ -42,7 +42,7 @@ class ContactForm extends Component {
         );
       case 2:
         return (
-          <div>
+          <div className="component-container">
             <h2>Contact Form</h2>
             <JobInfo
               handleChange={this.handleChange}
@@ -54,11 +54,14 @@ class ContactForm extends Component {
         );
       default:
         return (
-          <ContactInfo
-            handleChange={this.handleChange}
-            nextStep={this.nextStep}
-            values={values}
-          />
+          <div className="component-container">
+            <h2>Contact Form</h2>
+            <ContactInfo
+              handleChange={this.handleChange}
+              nextStep={this.nextStep}
+              values={values}
+            />
+          </div>
         );
     }
   }

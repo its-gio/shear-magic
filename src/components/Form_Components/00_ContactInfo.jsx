@@ -18,6 +18,9 @@ function TextMaskCustom(props) {
         inputRef(ref ? ref.inputElement : null);
       }}
       mask={[
+        "+",
+        /\d?/,
+        /\d/,
         "(",
         /\d/,
         /\d/,
@@ -34,18 +37,23 @@ function TextMaskCustom(props) {
         /\d/
       ]}
       placeholderChar={"\u2000"}
-      showMask
     />
   );
 }
 
 class ContactInfo extends Component {
+  continue = e => {
+    e.preventDefault();
+    this.props.nextStep();
+  };
+
   render() {
     const { handleChange } = this.props;
     const { fullName, phoneNumber, location } = this.props.values;
 
     return (
       <div className="form-component form">
+        <h4 className="form-component--sub-title">Personal Info</h4>
         <TextField
           id="fullName"
           label="Full Name"
@@ -69,7 +77,7 @@ class ContactInfo extends Component {
           value={location}
           onChange={handleChange("location")}
         />
-        <Button variant="contained" color="primary">
+        <Button onClick={this.continue} variant="contained" color="primary">
           Continue
         </Button>
       </div>
