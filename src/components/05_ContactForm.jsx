@@ -1,21 +1,22 @@
 import React, { Component } from "react";
 import ContactInfo from "./Form_Components/00_ContactInfo.jsx";
+import JobInfo from "./Form_Components/01_JobInfo.jsx";
 
 class ContactForm extends Component {
   state = {
     step: 1,
     fullName: "",
-    phoneNumber: "(  )    -    ",
+    phoneNumber: "",
     location: ""
   };
 
   nextStep = () => {
-    const step = this.state;
+    const { step } = this.state;
     this.setState({ step: step + 1 });
   };
 
   prevStep = () => {
-    const step = this.state;
+    const { step } = this.state;
     this.setState({ step: step - 1 });
   };
 
@@ -30,11 +31,26 @@ class ContactForm extends Component {
     switch (step) {
       case 1:
         return (
-          <ContactInfo
-            handleChange={this.handleChange}
-            nextStep={this.nextStep}
-            values={values}
-          />
+          <div>
+            <h2>Contact Form</h2>
+            <ContactInfo
+              handleChange={this.handleChange}
+              nextStep={this.nextStep}
+              values={values}
+            />
+          </div>
+        );
+      case 2:
+        return (
+          <div>
+            <h2>Contact Form</h2>
+            <JobInfo
+              handleChange={this.handleChange}
+              nextStep={this.nextStep}
+              prevStep={this.prevStep}
+              values={values}
+            />
+          </div>
         );
       default:
         return (
