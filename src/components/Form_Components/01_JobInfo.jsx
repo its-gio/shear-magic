@@ -2,10 +2,16 @@ import React, { Component } from "react";
 import { TextField, Button } from "@material-ui/core";
 
 class JobInfo extends Component {
-  Back = e => {
+  back = e => {
     e.preventDefault();
     this.props.prevStep();
   };
+
+  continue = e => {
+    e.preventDefault();
+    this.props.nextStep();
+  };
+
   render() {
     return (
       <div className="form-component form">
@@ -15,12 +21,14 @@ class JobInfo extends Component {
           label="Full Name"
           placeholder="Enter Full Name"
         />
-        <Button onClick={this.Back} variant="contained" color="primary">
-          Back
-        </Button>
-        <Button onClick={this.continue} variant="contained" color="primary">
-          Continue
-        </Button>
+        <div className="form-component--buttons">
+          <Button onClick={this.back} variant="contained" color="secondary">
+            Back
+          </Button>
+          <Button onClick={this.continue} variant="contained" color="primary">
+            Continue
+          </Button>
+        </div>
       </div>
     );
   }

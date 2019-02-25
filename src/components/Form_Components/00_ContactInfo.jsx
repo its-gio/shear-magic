@@ -77,9 +77,11 @@ class ContactInfo extends Component {
           value={location}
           onChange={handleChange("location")}
         />
-        <Button onClick={this.continue} variant="contained" color="primary">
-          Continue
-        </Button>
+        <div className="form-component--buttons">
+          <Button onClick={this.continue} variant="contained" color="primary">
+            Continue
+          </Button>
+        </div>
       </div>
     );
   }

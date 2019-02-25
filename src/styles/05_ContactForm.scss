@@ -10,4 +10,12 @@
   &--sub-title {
     margin: 0;
   }
+
+  &--buttons {
+    padding: 5px;
+
+    button {
+      margin: 0 5px;
+    }
+  }
 }
