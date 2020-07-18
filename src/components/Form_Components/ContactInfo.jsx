@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-import MaskedInput from "react-text-mask";
 import {
   TextField,
   Button,
   Input,
   InputLabel,
-  FormControl
+  FormControl,
 } from "@material-ui/core";
 
 function TextMaskCustom(props) {
@@ -14,7 +13,7 @@ function TextMaskCustom(props) {
   return (
     <MaskedInput
       {...other}
-      ref={ref => {
+      ref={(ref) => {
         inputRef(ref ? ref.inputElement : null);
       }}
       mask={[
@@ -34,7 +33,7 @@ function TextMaskCustom(props) {
         /\d/,
         /\d/,
         /\d/,
-        /\d/
+        /\d/,
       ]}
       placeholderChar={"\u2000"}
     />
@@ -42,7 +41,7 @@ function TextMaskCustom(props) {
 }
 
 class ContactInfo extends Component {
-  continue = e => {
+  continue = (e) => {
     e.preventDefault();
     this.props.nextStep();
   };

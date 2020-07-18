@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Button from "@material-ui/core/Button";
-import logo from "../imgs/shear-magic-logo.png";
+import logo from "../imgs/Shear-Magic-Logo.png";
 
 class Header extends Component {
   render() {

@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Bitter|Dancing+Script:700|Lato");
-@import "./styles/00_Header.scss";
-@import "./styles/01_Hero.scss";
-@import "./styles/02_About.scss";
-@import "./styles/03_Shearing.scss";
-@import "./styles/04_Pricing.scss";
-@import "./styles/05_ContactForm.scss";
+@import "./styles/Header.scss";
+@import "./styles/Hero.scss";
+@import "./styles/About.scss";
+@import "./styles/Shearing.scss";
+@import "./styles/Pricing.scss";
+@import "./styles/ContactForm.scss";
 
 * {
   box-sizing: border-box;
@@ -74,14 +74,14 @@ blockquote {
   height: 250px;
 
   &.shearing-div {
-    background: url("../src/imgs/shearing-div.jpg");
+    background: url("/imgs/shearing-div.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
   }
 
   &.pricing-div {
-    background: url("../src/imgs/pricing-div.jpg");
+    background: url("/imgs/pricing-div.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;

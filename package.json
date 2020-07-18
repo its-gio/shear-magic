@@ -1,57 +1,36 @@
 {
-  "name": "Shear-Magic",
-  "version": "1.0.0",
-  "description": "Phun little syte for Cergeo Balkrotia",
-  "main": "index.js",
+  "name": "shear-magic",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "node-sass": "^4.14.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1"
+  },
   "scripts": {
-    "format": "prettier --write \"src/*.{js,jsx,css,json}'",
-    "format:check": "prettier --list-different \"src/*.{js,jsx,css,json}\"",
-    "lint": "eslint \"src/*/*.{js,jsx}\"",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/its-gio/shear-magic.git"
+  "eslintConfig": {
+    "extends": "react-app"
   },
-  "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-eslint": "^9.0.0",
-    "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "eslint": "^5.6.0",
-    "eslint-config-prettier": "^3.4.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jsx-a11y": "^6.1.2",
-    "eslint-plugin-prettier": "^3.0.1",
-    "eslint-plugin-react": "^7.12.3",
-    "prettier": "^1.15.3",
-    "sass": "^1.16.0"
-  },
-  "dependencies": {
-    "@material-ui/core": "^3.9.2",
-    "components": "^0.1.0",
-    "express": "^4.16.4",
-    "node-sass": "^4.11.0",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
-    "react-scripts": "^2.1.5",
-    "react-scroll-to-component": "^1.0.2",
-    "react-text-mask": "^5.4.3"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/its-gio/shear-magic/issues"
-  },
-  "homepage": "https://github.com/its-gio/shear-magic#readme",
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }

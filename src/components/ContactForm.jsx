@@ -1,13 +1,13 @@
 import React, { Component } from "react";
-import ContactInfo from "./Form_Components/00_ContactInfo.jsx";
-import JobInfo from "./Form_Components/01_JobInfo.jsx";
+import ContactInfo from "./Form_Components/ContactInfo.jsx";
+import JobInfo from "./Form_Components/JobInfo.jsx";
 
 class ContactForm extends Component {
   state = {
     step: 1,
     fullName: "",
     phoneNumber: "",
-    location: ""
+    location: "",
   };
 
   nextStep = () => {
@@ -20,7 +20,7 @@ class ContactForm extends Component {
     this.setState({ step: step - 1 });
   };
 
-  handleChange = input => e => {
+  handleChange = (input) => (e) => {
     this.setState({ [input]: e.target.value });
   };
 
