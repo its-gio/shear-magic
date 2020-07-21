@@ -74,14 +74,14 @@ blockquote {
   height: 250px;
 
   &.shearing-div {
-    background: url("/imgs/shearing-div.jpg");
+    background: url("./imgs/shearing-div.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
   }
 
   &.pricing-div {
-    background: url("/imgs/pricing-div.jpg");
+    background: url("./imgs/pricing-div.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
