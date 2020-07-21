@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class Pricing extends Component {
   render() {
     return (
-      <div className="pricing component-container">
+      <div id="pricing" className="pricing component-container">
         <h2 className="pricing--title">Pricing Schedule:</h2>
         <div className="pricing--content-container break">
           <ul className="pricing--content-container__list">

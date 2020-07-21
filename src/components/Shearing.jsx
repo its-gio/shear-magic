@@ -6,7 +6,7 @@ import parts from "../imgs/shearing-parts.png";
 class Shearing extends Component {
   render() {
     return (
-      <div className="shearing component-container">
+      <div id="shearing" className="shearing component-container">
         <div className="shearing--top">
           <h2 className="shearing--top__title">
             Shearing Day Checklist (Alpaca):

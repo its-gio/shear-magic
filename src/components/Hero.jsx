@@ -11,7 +11,6 @@ class Hero extends Component {
           </h1>
           <p className="hero--content__claimer">Shearing since 2013</p>
           <Button
-            onClick={() => this.props.scroll("Contact")}
             variant="contained"
             color="primary"
             className="hero--content__contact"
